@@ -57,4 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     });
+
+  // input에 숫자 갯수 제한하기/notion에 정리하기
+  // document.querySelectorAll('input[type=number][maxlength]').forEach(
+
+  // );
 });
