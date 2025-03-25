@@ -1,59 +1,59 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-a{
-    text-decoration: none; 
-    color: #232323;
-    font-size: 12px;
-    line-height: 1.2;
+a {
+  text-decoration: none;
+  color: #232323;
+  font-size: 12px;
+  line-height: 1.2;
 }
 .gry-box {
-    background-color: #f5f5f5;
-    color: #555;
-    padding: 10px;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 17px;
-    box-sizing: border-box;
+  background-color: #f5f5f5;
+  color: #555;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  box-sizing: border-box;
 }
-/* button */
-button{
-    border: 0;
-    width: 100%;
-    height: 42px;
-    font-size: 12px;
+/* button UI */
+button {
+  border: 0;
+  width: 100%;
+  height: 42px;
+  font-size: 12px;
 }
-button:disabled{
-    border-radius: 6px;
-    border: 1px solid #eee;
-    color: #ccc;
-    background-color: rgba(239, 239, 239, 0.3);
+button:disabled {
+  border-radius: 6px;
+  border: 1px solid #eee;
+  color: #ccc;
+  background-color: rgba(239, 239, 239, 0.3);
 }
-.primary-btn{
-    color: #fff;
-    width: 100%;
-    height: 42px;
-    background-color: #6039B9;
-    border-radius: 6px;
+.primary-btn {
+  color: #fff;
+  width: 100%;
+  height: 42px;
+  background-color: #6039b9;
+  border-radius: 6px;
 }
-.primary-btn:hover{
-    background-color: #532fa8;
+.primary-btn:hover {
+  background-color: #532fa8;
 }
-.primary-btn.sm{
-    padding: 5px auto;
+.primary-btn.sm {
+  padding: 5px auto;
 }
-.primary-line-btn{
-    color: #6039B9;
-    width: 100%;
-    height: 42px;
-    background-color: #fff;
-    border: 1px solid #6039B9;
-    border-radius: 6px;
+.primary-line-btn {
+  color: #6039b9;
+  width: 100%;
+  height: 42px;
+  background-color: #fff;
+  border: 1px solid #6039b9;
+  border-radius: 6px;
 }
-.primary-line-btn:hover{
-    background-color: #5f39b90c;
+.primary-line-btn:hover {
+  background-color: #5f39b90c;
 }
 /*작은 버튼으로 정중앙 해서 정렬 공통을 만들려면 어떻게 하는게 좋을까?
 너비 100에 2개 정렬 / 3개 정렬 / 4개 까지 - 공통 박스 만들기 > 버튼이 아닌 특정 클래스를 통해 제어
@@ -63,233 +63,231 @@ button:disabled{
 2. vue react
 */
 .layout-center {
-    max-width: 680px;
-    min-width: 320px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-    user-select: none;
-    /* 텍스트 선택 불가 */
+  max-width: 680px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  user-select: none;
+  /* 텍스트 선택 불가 */
 }
 
 .layout-center-header {
-    position: relative;
-    padding: 16px 0;
+  position: relative;
+  padding: 16px 0;
 }
 
 .layout-center-header h2 {
-    text-align: center;
-    font-size: 20px;
-    line-height: 28px;
-    font-style: normal;
-    font-weight: 700;
+  text-align: center;
+  font-size: 20px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .layout-center .layout-center-body {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 /* .layout-center-body-contents {} */
 
 .contents-article {
-    padding: 16px 0 15px 0;
-    border-bottom: 1px dashed #DDD;
+  padding: 16px 0 15px 0;
+  border-bottom: 1px dashed #ddd;
 }
 
-
-
 .contents-article-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 400;
-    color: #232323;
-    margin-bottom: 6px;
-    line-height: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #232323;
+  margin-bottom: 6px;
+  line-height: 17px;
 }
 
 .contents-article-item dt {
-    color: #555;
-    font-weight: 500;
-    flex: 3;
+  color: #555;
+  font-weight: 500;
+  flex: 3;
 }
 
 .contents-article-item dd {
-    flex: 7;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    text-align: right;
+  flex: 7;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: right;
 }
 
 .contents-article-item dd.long-text,
 .item-long-text {
-    white-space: normal;
-    overflow: visible;
-    word-break: break-word;
+  white-space: normal;
+  overflow: visible;
+  word-break: break-word;
 }
 
 .contents-article-item:has(dd.item-long-text) {
-    align-items: baseline;
+  align-items: baseline;
 }
 
 .contents-article-item:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .contents-article-item.tit-area {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contents-article-item.tit-area p {
-    color: #232323;
-    font-size: 12px;
+  color: #232323;
+  font-size: 12px;
 }
 
 .contents-article-item.tit-area .sub-text-gray {
-    color: #999;
-    text-align: right;
-    font-family: Pretendard;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 17px;
-    /* 141.667% */
+  color: #999;
+  text-align: right;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  /* 141.667% */
 }
 
 .contents-article-item .total_price {
-    color: #6039B9;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 17px;
-    text-align: right;
+  color: #6039b9;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: right;
 }
 
 .receipt-footer {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
 
-
 @media (max-width: 320px) {
-    .layout-center {
-        width: 320px;
-    }
+  .layout-center {
+    width: 320px;
+  }
 }
 
 /* 팝업-꽉찬 레이어형 */
 .layer-modal .modal-content {
-    width: 100%;
-    height: 100%;
-    max-width: none;
-    background: white;
-    padding: 20px;
-    box-sizing: border-box;
-    position: relative;
-    animation: slide 0.3s ease;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  animation: slide 0.3s ease;
 }
 @keyframes slide {
-    from {
-        left: 0;
-    }
-    to {
-        right: 0;
-    }
+  from {
+    left: 0;
+  }
+  to {
+    right: 0;
+  }
 }
 /* 뒤로가기 버튼 스타일 */
 .layer-modal .back-btn {
-    position: absolute;
-    top: 23px;
-    left: 20px;
-    font-size: 12px;
-    padding: 6px 15px;
-    color: #532fa8;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    z-index: 100;
+  position: absolute;
+  top: 23px;
+  left: 20px;
+  font-size: 12px;
+  padding: 6px 15px;
+  color: #532fa8;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 100;
 }
 /* 팝업 테스트 */
 
 /* //input 그룹 - 반응형 처리*/
-.modal{
-    display: none;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    z-index: 1000;
-    left: 0; top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+.modal {
+  display: none;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.modal-content{
-    width: 90%;
-    max-width: 400px;
-    background-color: #fff;
-    border-radius: 6px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    animation: fadeIn 0.3s ease-in-out;
-    text-align: center;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
+.modal-content {
+  width: 90%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  animation: fadeIn 0.3s ease-in-out;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
 }
-.modal-content h2{ 
-    font-size: 14px;
-    position: relative;
-    padding: 10px 0;
+.modal-content h2 {
+  font-size: 14px;
+  position: relative;
+  padding: 10px 0;
 }
-.modal-content h2::after{ 
-    content: '';
-    width: 100%;  
-    height: 1px;  
-    background-color: #ccc;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.modal-content h2::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
-.modal-content .modal-detail-wrap p{    
-    font-size: 12px;
-    padding: 3px 0;
-} 
-.modal-detail-top{
-    /* padding: 10px 0 10px 0 ; */
-    margin: 10px 0;
+.modal-content .modal-detail-wrap p {
+  font-size: 12px;
+  padding: 3px 0;
+}
+.modal-detail-top {
+  /* padding: 10px 0 10px 0 ; */
+  margin: 10px 0;
 }
 .close-btn {
-    cursor: pointer;
-    display: block;
+  cursor: pointer;
+  display: block;
 }
-.close-btn.icon{
-    position: absolute;
-    right: 22px;
-    font-size: 24px;
-    z-index: 10;
+.close-btn.icon {
+  position: absolute;
+  right: 22px;
+  font-size: 24px;
+  z-index: 10;
 }
 /* 등장 애니메이션 */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        /* transform: scale(0.8); */
-    }
-    to {
-        opacity: 1;
-        /* transform: scale(1); */
-    }
+  from {
+    opacity: 0;
+    /* transform: scale(0.8); */
+  }
+  to {
+    opacity: 1;
+    /* transform: scale(1); */
+  }
 }
 @media (max-width: 758px) {
-    /* .modal-content{
+  /* .modal-content{
         width: 300px;
         left: calc(50% - 150px);
     } */
@@ -297,30 +295,31 @@ button:disabled{
 
 /* 검색바 */
 .input-group {
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    line-height: 20px;
-    box-sizing: border-box;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  box-sizing: border-box;
 }
-input[type=text],input[type=number] {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    /* display: flex; */
-    font-size: 13px;
-    height: 33px;
-    margin: 0;
-    padding: 0 0 0 15px;
-    width: 100%;
-    text-align: left;
-    box-sizing: border-box;
+input[type="text"],
+input[type="number"] {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  /* display: flex; */
+  font-size: 13px;
+  height: 33px;
+  margin: 0;
+  padding: 0 0 0 15px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
 }
-input:focus-visible{
-    outline: 1px solid #6039B9;
-    border-radius: 6px;
+input:focus-visible {
+  outline: 1px solid #6039b9;
+  border-radius: 6px;
 }
 /* 에러시 발생하는 아웃라인 */
 /* input:focus-visible{
@@ -328,90 +327,95 @@ input:focus-visible{
     border-radius: 6px;
 } */
 label {
-    display: block;
-    margin-bottom: 2px;
-    text-align: left;
-    font-size: 12px;
+  display: block;
+  margin-bottom: 2px;
+  text-align: left;
+  font-size: 12px;
 }
-.label.req::after{
-    content: '*';
-    color: #cc0033;
-    margin-left: 4px;
+.label.req::after {
+  content: "*";
+  color: #cc0033;
+  margin-left: 4px;
 }
 .error-message {
-    color: #cc0033;
-    display: inline-block;
-    font-size: 12px;
-    line-height: 15px;
-    margin: 5px 0 0;
-    display: none;
-  }
-.btn-group{
+  color: #cc0033;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 5px 0 0;
+  display: none;
+}
+.btn-group {
   display: flex;
   align-items: center;
   flex: 1;
   gap: 4px;
 }
 /* input 그룹 - 반응형 처리*/
-.input-box-wrap{
-    display: grid;
-    gap: 10px;
-    padding: 10px;
+.input-box-wrap {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
 }
-.input-box-wrap > .item{
-    text-align: center;
+.input-box-wrap > .item {
+  text-align: center;
 }
-.input-box-wrap .item input{ 
-    width: 100%; 
-    /* padding: 5px; */
+.input-box-wrap .item input {
+  width: 100%;
+  /* padding: 5px; */
 }
 
 /* PC (1024px 이상) - 4-4-2 */
 @media (min-width: 1024px) {
-    .input-box-wrap {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .input-box-wrap > .item:nth-child(n+9) {
-        grid-column: span 2;
-    }
+  .input-box-wrap {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .input-box-wrap > .item:nth-child(n + 9) {
+    grid-column: span 2;
+  }
 }
 
 /* 테블릿 (768px ~ 1023px) - 3-3-2-2 */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .input-box-wrap {
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .input-box-wrap > .item:nth-child(n+) {
-        grid-column: span 2;
-    }
+  .input-box-wrap {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .input-box-wrap > .item:nth-child(n +) {
+    grid-column: span 2;
+  }
 }
 
 /* 모바일 (768px 이하) - 1개씩 */
 @media (max-width: 767px) {
-    .input-box-wrap {
-        grid-template-columns: 1fr;
-    }
+  .input-box-wrap {
+    grid-template-columns: 1fr;
+  }
 }
 
-form{font-family:'Pretendard'}
-form label.label-text-box{
-    display:flex;
-    gap:10px;
-    border:1px solid #e1e1e1;
-    border-radius:13px;
-    margin-bottom:10px;
-    padding:20px
+form {
+  font-family: "Pretendard";
 }
-form label p{font-weight:700;font-size:14px; margin-bottom: 2px;}
-
+form label.label-text-box {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 13px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+form label p {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
 
 /* 재작업하시오~~ */
 
 /* 기본스타일 제거, 버튼 모양 재설정 */
-input[type='radio'] {
-  flex-shrink:0;
+input[type="radio"] {
+  flex-shrink: 0;
   -webkit-appearance: none; /* 웹킷 브라우저에서 기본 스타일 제거*/
-  -moz-appearance: none; /* 모질라 브라우저에서 기본 스타일 제거*/ 
+  -moz-appearance: none; /* 모질라 브라우저에서 기본 스타일 제거*/
   appearance: none; /*기본 브라우저에서 기본 스타일 제거*/
   width: 13px;
   height: 13px;
@@ -422,7 +426,7 @@ input[type='radio'] {
 }
 
 /* 체크 시 버튼 모양 스타일*/
-input[type='radio']:checked {
+input[type="radio"]:checked {
   background-color: #111; /*체크 시 내부 원 색상*/
   border: 3px solid #fff; /*라인이 아닌, 라인과 원 사이 색상*/
   box-shadow: 0 0 0 1px #111; /*라인*/
