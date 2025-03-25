@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title> 개인테스트 </title>
+    <style> </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="layout-center-wrap">
+            <div class="layout-center">
+                <div class="layout-center-header">
+                    <h2> Page Title </h2>
+                </div>
+                <div class="layout-center-body receipt-body">
+                    <div class="receipt-body-contents">
+                        <div class="contents-article">
+                            <div class="contents-article-item tit-area">
+                                <h3> Sub Title </h3>
+                                <p class="sub-text-gray"> Sub Title Text </p>
+                            </div>
+                            <dl class="contents-article-item">
+                                <dt> Item title </dt>
+                                <dd> Description / about title text </dd>
+                            </dl>
+                            <dl class="contents-article-item">
+                                <dt>Item title</dt>
+                                <dd>Description / about title text </dd>
+                            </dl>
+                        </div>
+                        <!-- 품명 -->
+                        <div class="contents-article">
+                            <div class="contents-article-item tit-area">
+                                <h3> Modal </h3>
+                                <p> 다양한 모달 </p>
+                            </div>
+                            <dl class="contents-article-item test-zone">
+                                <dt> 꽉찬 팝업 / 새창 </dt>
+                                <dd>
+                                    <!-- <a href="#" target="_blank" onclick="newPopup()"> 클릭 </a> -->
+                                    <a href="#" target="_blank"> 새 파일로 넘어가는 팝업 </a>
+                                </dd>
+                            </dl>
+                            <dl class="contents-article-item">
+                                <dt> input-box, Full Page </dt>
+                                <dd>
+                                    <a href="#" data-target="layoutModal" style="color: red;">
+                                        Display Grid-flexible / Back Button
+                                    </a>
+                                </dd>
+                            </dl>
+                            <div class="modal layer-modal" id="layoutModal">
+                                <div class="modal-content">
+                                    <!-- <span class="close-btn">&times;</span> -->
+                                    <span class="back-btn"> back </span>
+                                    <h2> 꽉찬 페이지 </h2>
+                                    <div class="modal-detail-wrap">
+                                        <div class="modal-detail-top">
+                                            <div class="input-box-wrap gry-box">
+                                                <div class="item">
+                                                    <label for="name" class="label">UserName</label>
+                                                    <input type="text" placeholder="UserName">
+                                                </div>
+                                                <div class="item">
+                                                    <label for="name" class="label">UserName</label>
+                                                    <input type="text" placeholder="입력">
+                                                </div>
+                                                <div class="item">
+                                                    <label for="name" class="label">UserName</label>
+                                                    <input type="text" placeholder="입력">
+                                                </div>
+                                                <div class="item">
+                                                    <label for="name" class="label"> input-title </label>
+                                                    <input type="text" placeholder="입력">
+                                                </div>
+                                                <div class="item">
+                                                    <label for="name" class="label"> input-title </label>
+                                                    <input type="text" placeholder="입력">
+                                                </div>
+                                                <div class="item">
+                                                    <label for="name" class="label"> input-title </label>
+                                                    <input type="text" placeholder="입력">
+                                                </div>
+                                                <div class="item">
+                                                    <label for="name" class="label"> input-title </label>
+                                                    <input type="text" placeholder="입력">
+                                                </div>
+                                                <div class="item">
+                                                    <label for="name" class="label"> input-title </label>
+                                                    <input type="text" placeholder="입력">
+                                                </div>
+                                                <div class="item">
+                                                    <label for="name" class="label"> input-title </label>
+                                                    <input type="text" placeholder="입력">
+                                                </div>
+                                                <div class="item">
+                                                    <label for="name" class="label"> input-title </label>
+                                                    <input type="text" placeholder="입력">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-detail-bottom"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 반응형 박스가 들어간 팝업 화면 -->
+                            <dl class="contents-article-item">
+                                <dt> 특정한 크기의 띄우는 팝업 </dt>
+                                <dd>
+                                    <a href="#" class="open-btn" data-target="modalPopup"> 특정팝업 </a>
+                                </dd>
+                            </dl>
+                            <!-- 특정 크기 팝업 / 현재 페이지에서 띄우기 -->
+                            <div id="modalPopup" class="modal">
+                                <div class="modal-content">
+                                    <span class="close-btn icon">&times;</span>
+                                    <h2> 특정크키팝업</h2>
+                                    <div class="modal-detail-wrap">
+                                        <div class="modal-detail-top">
+                                            <div class="input-group-wrap gry-box">
+                                                <div class="input-group ">
+                                                    <label for="name" class="label req">UserName</label>
+                                                    <input type="text" placeholder="UserName">
+                                                    <div class="error-message"> 입력해 주세요. </div>
+                                                </div>
+
+                                                <!-- Input Field with Error -->
+                                                <div class="input-group error">
+                                                    <label for="name" class="label req">Product Number</label>
+                                                    <input type="text" placeholder="UserName">
+                                                    <div class="error-message">입력해 주세요.</div>
+                                                </div>
+
+                                                <!-- 3캉 -->
+                                                <div class="input-group error">
+                                                    <label for="name" class="label req">
+                                                        Phone Number
+                                                    </label>
+
+                                                    <div class="phone" style="display: flex; align-items: center;">
+                                                        <input type="number" placeholder="123" maxlength="4">
+                                                        <span style="margin: 0 2px;">-</span>
+                                                        <input type="number" placeholder="2134" maxlength="4">
+                                                        <span style="margin: 0 2px;">-</span>
+                                                        <input type="number" placeholder="8888" maxlength="4">
+                                                    </div>
+
+                                                    <div class="error-message">입력해 주세요.</div>
+                                                </div>
+
+                                            </div>
+                                            <div style="margin-top: 10px;">
+                                                <p>이곳에 팝업 내용을 입력하세요.</p>
+                                                <p>이곳에 팝업 내용을 입력하세요.</p>
+                                                <p> 닫기는 버튼이나 상단창 둘 중 하나만 사용하기.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-detail-bottom" style="">
+                                            <div class="btn-group">
+                                                <button type="button" class="primary-btn">
+                                                    등록
+                                                </button>
+                                                <button type="button" class="primary-line-btn">
+                                                    재등록
+                                                </button>
+                                                <button type="button" class="" disabled>
+                                                    비활성화
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-detail-bottom" style="margin-top: 4px;">
+                                            <div class="btn-group">
+                                                <button type="button" class="primary-btn">
+                                                    등록
+                                                </button>
+                                                <button type="button" class="primary-line-btn">
+                                                    재등록
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-detail-bottom" style="margin-top: 4px;">
+                                            <div class="btn-group">
+                                                <button type="button" class="primary-btn">
+                                                    등록
+                                                </button>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="primary-line-btn close-btn"
+                                                    style="margin-top: 4px;">
+                                                    닫기
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //특정 크기 팝업 / 현재 페이지에서 띄우기 -->
+                            </div>
+                            <dl class="contents-article-item">
+                                <dt> 데이터/ 중복팝업기능 살리기 </dt>
+                                <dd>
+                                    <a href="#" data-target="modalPopup1"> data-target1 </a>
+                                </dd>
+                            </dl>
+                            <dl class="contents-article-item">
+                                <dt> 새 레이언/아래->위로 </dt>
+                                <dd>
+                                    <a href="#" data-target="modalPopup2"> data-target2 </a>
+                                </dd>
+                            </dl>
+
+                            <div id="modalPopup2" class="modal">
+                                <div class="modal-content">
+                                    <span class="close-btn">&times;</span>
+                                    <h2> 중복 팝업 테스트 / 기능 공통화2 </h2>
+                                </div>
+                            </div>
+                            <div id="modalPopup1" class="modal">
+                                <div class="modal-content">
+                                    <span class="close-btn">&times;</span>
+                                    <h2> 중복 팝업 테스트 / 기능 공통화 </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //품명 -->
+                        <!-- test -->
+                        <div class="contents-article">
+                            <div class="contents-article-item tit-area">
+                                <h3> Form </h3>
+                                <p class="sub-text-gray"> 다양한 Form </p>
+                            </div>
+                            <dl class="contents-article-item">
+                                <dt> Custom Select Box</dt>
+                                <dd>
+                                    <select name="fruits" class="select">
+                                        <option disabled selected>fruits 🍊</option>
+                                        <option value="apple">apple</option>
+                                        <option value="orange">orange</option>
+                                        <option value="grape">grape</option>
+                                        <option value="melon">melon</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <!-- <dl class="contents-article-item">
+                                <dt> Custom Radio Box</dt>
+                                <dd>
+                                    <form>
+                                        <label for="product_a">
+                                            <input type="radio" name="product" id="product_a" value="A">
+                                            ddd
+                                        </label>
+                                        <label for="product_b">
+                                            <input type="radio" name="product" id="product_b" value="B">
+                                        </label>
+                                    </form>
+                                </dd>
+                            </dl> -->
+                            <dl class="contents-article-item">
+                                <dt> Custom Radio Box</dt>
+                                <dd>
+                                    <form>
+                                        <label for="product_a" class="label-text-box">
+                                            <input type="radio" name="product" id="product_a" value="A">
+                                            <div>
+                                                <p> Radio Box Title </p>
+                                                <span>Radio Box Text.</span>
+                                            </div>
+                                        </label>
+                                        <label for="product_b" class="label-text-box">
+                                            <input type="radio" name="product" id="product_b" value="B">
+                                            <div>
+                                                <p> Radio Box Title </p>
+                                                <span>
+                                                    Radio Box Text.<br>
+                                                    Radio Box Text.
+                                                </span>
+                                            </div>
+                                        </label>
+                                    </form>
+                                </dd>
+                            </dl>
+                            <!--  -->
+                            <!-- 팝업 공통으로 쓰기 -->
+
+                        </div>
+                        <!-- //test -->
+                    </div>
+                    <div class="receipt-footer">
+                        <div class="contents-article-item tit-area">
+                            <h3> Button </h3>
+                        </div>
+                        <button type="button" class="primary-btn"> Primary Button </button>
+                        <button type="button" class="primary-line-btn"> Primary Button </button>
+                        <div class="btn-group">
+                            <button type="button" class="primary-btn">
+                                등록
+                            </button>
+                            <button type="button" class="primary-line-btn">
+                                재등록
+                            </button>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="primary-btn">
+                                등록
+                            </button>
+                            <button type="button" class="primary-line-btn">
+                                재등록
+                            </button>
+                            <button type="button" class="primary-btn" disabled>
+                                Disabled Button
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const modals = document.querySelectorAll(".modal"); // 모든 모달 요소 가져오기
+
+                // 페이지 로드 시 모달이 표시되는 문제 해결
+                modals.forEach(modal => {
+                    modal.style.display = "none"; // 강제로 숨기기
+                });
+
+                const openBtns = document.querySelectorAll("[data-target]"); // data-target 속성이 있는 요소 찾기
+                const closeBtns = document.querySelectorAll(".close-btn"); // 닫기 버튼들
+
+                // 모달 열기
+                openBtns.forEach(button => {
+                    button.addEventListener("click", function (event) {
+                        event.preventDefault(); // a 태그의 기본 동작 방지
+                        const targetModalId = this.getAttribute("data-target"); // data-target 값 가져오기
+                        const modal = document.getElementById(targetModalId); // 해당하는 모달 찾기
+                        if (modal) {
+                            modal.style.display = "block";
+                        }
+                    });
+                });
+
+                // 모달 닫기
+                closeBtns.forEach(button => {
+                    button.addEventListener("click", function () {
+                        this.closest(".modal").style.display = "none"; // 현재 닫기 버튼이 속한 모달 닫기
+                    });
+                });
+
+                // 뒤로가기 버튼으로 팝업 닫기
+                const backBtns = document.querySelectorAll(".back-btn"); // 뒤로가기 버튼들
+
+                backBtns.forEach(button => {
+                    button.addEventListener("click", function () {
+                        history.back();
+                        this.closest(".modal").style.display = "none"; // 팝업 내부에서 실행할 경우
+                    });
+                });
+
+                // 모달 외부 클릭 시 닫기
+                window.addEventListener("click", function (event) {
+                    modals.forEach(modal => {
+                        if (event.target === modal) {
+                            modal.style.display = "none";
+                        }
+                    });
+                });
+                /*input 글자 수 제한*/
+                document.querySelectorAll('input[type=number][maxlength]').forEach(input => {
+                    input.addEventListener('input', function (ev) {
+                        const maxlength = this.getAttribute('maxlength');
+                        if (maxlength && this.value.length > maxlength) {
+                            this.value = this.value.substring(0, maxlength);
+                        }
+                    });
+                });     
+
+                // input에 숫자 갯수 제한하기/notion에 정리하기
+                // document.querySelectorAll('input[type=number][maxlength]').forEach(
+
+                // );
+
+
+            });
+        </script>
+        <!-- <script src="main.js"></script> -->
+</body>
+
+</html>
